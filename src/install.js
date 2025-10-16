@@ -1,5 +1,11 @@
 import './styles/install.css';
 
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js')  // або './my-pwa/sw.js' якщо base=/my-pwa/
+    .then(() => console.log('SW зареєстровано на install.html'))
+    .catch(console.error);
+}
+
 let deferredPrompt;
 const installButton = document.getElementById('installButton');
 
