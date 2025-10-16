@@ -1,0 +1,84 @@
+/* ========== GENERAL STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0a0f 0%, #1f1f27 100%);
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========== CONTAINER ========== */
+.container {
+  background: rgba(30, 30, 40, 0.85);
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  width: 90%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
+}
+
+/* ========== HEADINGS & TEXT ========== */
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #00fff0;
+}
+
+p {
+  font-size: 1rem;
+  color: #c0c0c0;
+  margin-bottom: 1.5rem;
+}
+
+/* ========== INSTALL PAGE BUTTON ========== */
+.install-page-button {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #00fff0 0%, #00d1d1 100%);
+  color: #0a0a0f;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.4);
+  text-decoration: none;
+}
+
+.install-page-button:hover {
+  background: linear-gradient(135deg, #00d1d1 0%, #00fff0 100%);
+  box-shadow: 0 6px 16px rgba(0, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 500px) {
+  .container {
+    padding: 2rem 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .install-page-button {
+    width: 100%;
+  }
+}
