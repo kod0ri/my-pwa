@@ -1,1 +1,0 @@
-import"./modulepreload-polyfill-B5Qt9EMX.js";"serviceWorker"in navigator&&navigator.serviceWorker.register("./sw.js").then(()=>console.log("SW зареєстровано на index.html")).catch(console.error);console.log("Головна сторінка завантажена");
